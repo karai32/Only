@@ -30,15 +30,15 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <CastomButton
-      border={border}
-      border_color={border_color}
-      border_radius={border_radius}
-      bg={bg}
-      width={width}
+      $border={border}
+      $border_color={border_color}
+      $border_radius={border_radius}
+      $bg={bg}
+      $width={width}
       onClick={onClick}
-      padding={padding}
-      disabled={disabled}
-      hover_bg={hover_bg}
+      $padding={padding}
+      $disabled={disabled}
+      $hover_bg={hover_bg}
     >
       {icon && <img src={icon} alt="icon" />}
       {text && text}

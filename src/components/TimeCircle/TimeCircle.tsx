@@ -51,7 +51,7 @@ const TimeCircle: React.FC<TimeCircleProps> = ({
   }, [isMobile]);
 
   return (
-    <Circle rotation={rotation}>
+    <Circle $rotation={rotation}>
       {segments.map((segment, index) => {
         const label = `${segment.date_1} – ${segment.date_2}`;
         const angle = segmentAngle * index - 90;
@@ -62,10 +62,10 @@ const TimeCircle: React.FC<TimeCircleProps> = ({
         return (
           <Dot
             key={index}
-            active={index === activeIndex}
+            $active={index === activeIndex}
             style={{ left: `${x}px`, top: `${y}px` }}
             onClick={() => onSelect(index)}
-            rotation={rotation}
+            $rotation={rotation}
             title={label}
           >
             <span>{index + 1}</span>

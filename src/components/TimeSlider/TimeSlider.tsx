@@ -29,8 +29,6 @@ const TimeSlider: React.FC<TimeSliderProps> = ({ activeIndex, segments }) => {
         slidesPerView={3}
         spaceBetween={80}
         navigation
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
         breakpoints={{
           0: { slidesPerView: 1.5 },
           480: { slidesPerView: 2, spaceBetween: 10 },
